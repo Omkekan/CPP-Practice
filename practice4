@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class volume
+{
+private:
+    double len;
+    double bre;
+    double hei;
+public:
+ volume(double x, double y, double z) : len(x), bre(y), hei(z){
+    cout<<"initialization successful";
+};
+
+void printvolume(){
+    cout<<len*bre*hei;
+}
+};
+
+int main(){
+    double a;
+    double b;
+    double c;
+    cin>>a>>b>>c;
+
+    volume v(a, b, c);
+    v.printvolume();
+
+    return 0;
+}
